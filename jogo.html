@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Jogo da velha - CupHead </title>
+    <link rel="stylesheet" href="stylev.css">
+    <link rel="shortcut icon" href="img/Cups.png" type="image/x-icon" />
+</head>
+
+<body id="bodyjogo">
+    <!-- <h2 id="h1tittle"> Jogo da velha - CUPHEAD</h2> -->
+    <img src="img/titlecup.png" alt="Cupimage" id="imgtitle">
+    <hr size="1">
+    <br /><br>
+
+    <nav id="print1"> </nav>
+    <nav id="print2"></nav>
+    <table width="500px" border="1" bordercolor="A1A1A1">
+
+        <script type="text/javascript" src="jogovelha.js"></script>
+        <tbody>
+
+            <tr>
+                <td onclick="checkjogo(this.id)" id="c1"> </td>
+                <td onclick="checkjogo(this.id)" id="c2"> </td>
+                <td onclick="checkjogo(this.id)" id="c3"> </td>
+
+            </tr>
+            <tr>
+                <td onclick="checkjogo(this.id)" id="c4"> </td>
+                <td onclick="checkjogo(this.id)" id="c5"> </td>
+                <td onclick="checkjogo(this.id)" id="c6"> </td>
+
+            </tr>
+            <tr>
+                <td onclick="checkjogo(this.id)" id="c7"> </td>
+                <td onclick="checkjogo(this.id)" id="c8"> </td>
+                <td onclick="checkjogo(this.id)" id="c9"> </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+    <a href="index.html"> <img src="img/cup.png" id="voltar" alt=""> </a>
+    <a href="jogo.html"></a>
+
+    <button onclick="restart()" id="restart"> </button>
+    <tr>
+        <div id="mudarL">
+            <label>Jogar contra Bot:</label>
+            <td><label>
+                    <input type="radio" name="_bot" id="_bot" value="s"> Sim
+                    <input type="radio" name="_bot" id="_bot" value="n" checked> Não
+                </label></td>
+        </div>
+    </tr>
+
+    <td><img id="imgwin" src="img/mug.png" alt=""></td>
+    <td><img id="imgvelha" src="img/velha.gif" alt=""></td>
+    <section id="backgrounda"></section>
+
+
+</body>
+
+</html>
